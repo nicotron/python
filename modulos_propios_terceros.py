@@ -43,6 +43,19 @@ print(dir(m))
 
 
 """
+Otra forma de importa módulos sin la necesidad de utilizas la sintaxis de punto, es por medio de importar todo desde el nombre del archivo.
+from modulo import *
+De esta forma se podrán utilizar las funciones como locales.
+"""
+# importar el modulo "modulo.py"
+from modulo import *
+
+#usar la función saludos
+saludos("Elena")
+
+
+
+"""
 Actividad: Escribir un módulo con funciones que permitan escribir un cuento, en donde las variables del cuento serán listas, diccionarios, tuples.
 Tienen que buscar información de como se escriben diccionarios en Python
 """
