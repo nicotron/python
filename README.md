@@ -1,2 +1,10 @@
-# first step from terminal git repo
-All the I've learning to make a introduction course to Python.
+Cada archivo tiene bloques de comentarios explicando la sintaxis de Python.  
+
+Tabla de contenidos:  
+- for while loops - arrays
+- try except finally
+- funciones recursivas - funciones iterativas
+- funciones: llamados - parámertos 
+- modulos: propios y de terceros
+- Object Oriented Programming
+- Inheritance
