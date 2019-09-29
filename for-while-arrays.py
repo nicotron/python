@@ -4,7 +4,7 @@
 """
  En Python existen dos tipos de loops, While loop y For loop.
  El While loop tiene la misma estructura que el Mientras en PSEint
- La sintaxis es la siguente:
+ La sintaxis es la siguiente:
 
  En donde debe existir una condición verdadera para que se ejecute el código indentado en el loop.
  Si no se cambia la condición, no se podrá salir del loop
@@ -22,15 +22,19 @@ Hay modificaciones al While loop para dar una mayor flexibilidad esta estructura
 La declaración Break permite detener el loop a pesar que la condición la que se ejecuta el verdadera
 """
 
-# condicion = 1
+condicion = 1
 
-# while condicion < 10:
-#     print(condicion, " Texto dentro de la condición")
-#     condicion += 1
-#     # uso de declaración break
-#     if(condicion == 4):
-#         break
-# print("Fin del programa")
+while condicion < 10:
+    print(condicion, " Texto dentro de la condición")
+    condicion += 1
+    # uso de declaración break
+    if(condicion == 4):
+        break
+print("Fin del programa")
+
+"""
+Otra declaración que existe como modificador es continue, permite saltar esa iteración si la condición que la contiene es verdadera
+"""
 
 condicion = 1
 
@@ -64,7 +68,7 @@ print("Fin del programa")
 """
 Otro tipo de loop es el for loop, el cual itera sobre una secuencia, esta secuencia puede ser del tipo, list, tuple, diccionary, set, o string.
 A diferencia de otras estructuras de for loop en otros lenguajes de programación el for loop en Python sirve como un método iterador, por lo cual se ejecutarán una serie de declaraciones, una por cada elemento de la lista, tuple, set, etc
-El siguente código muestra los elementos de una lista
+El siguiente código muestra los elementos de una lista
 """
 
 # iterar por los elementos de una lista
@@ -110,6 +114,7 @@ for elementos in lista:
 
 """
 Elementos Ordenados
+Son una estructura para poder almacenar información ordenada, esto permite poder saber qué hay y dónde está, pero también modificar el tamaño, y sobre escribir la información de cada elemento.
 Son variables que almacenan multiples valores en sí misma.
 Se crean con corchetes después del nombre de la variable, y en su interior se pueden almacenar las variables.
 Son de tamaño dinámico por lo que para agregar o disminuir, existen los métodos:
@@ -123,11 +128,13 @@ colores = ["rojo", "blanco", "cafe", "azul", "negro"]
 # iterar por todos los elementos de la lista
 for color in colores:
     print(color)
+print("-----")
 # agregando un color
 colores.append("amarillo")
 # iterar por todos los elementos de la lista
 for color in colores:
     print(color)
+print("-----")
 # remover el ultimo elemento, necesitamos saber el tamaño para luego saber la ultima posicion
 ultimo = len(colores)
 colores.pop(ultimo-1)
@@ -136,6 +143,7 @@ colores.remove("negro")
 # iterar por todos los elementos de la lista
 for color in colores:
     print(color)
+print("-----")
 
 """
 Existen una serie de otros métodos dentro de la estructura de Elementos Ordenados:
