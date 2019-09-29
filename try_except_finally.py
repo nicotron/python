@@ -1,7 +1,5 @@
 # Nicolás Troncoso notes about try, except, finally
 
-#The try block will generate a NameError, because x is not defined:
-
 """
 Errores en los programas como por ejemplo, un cálculo que no existe; ingresar texto en variables numéricas, etc, hacen caer al programa. Existe una estructura que puede manejar el programa en caso de error y no cometer un "Error en tiempo de ejecución", así el programa seguirá con la ejecución del resto del código.
 
