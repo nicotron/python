@@ -5,7 +5,7 @@ Python es un lenguaje orientado a objetos.
 Un objeto se define como una entidad que tiene métodos y atributos particulares, los cuales son creados dentro de una Clase.
 Por lo tanto una Clase contiene todo lo necesario para que un objeto de se genere.
 Una Clase encapsula variables, como atributos; y funciones, como métodos.
-Para acceder tanto a atributos como métodos, se realiza a traǘes de la sintásis de punto.
+Para acceder tanto a atributos como métodos, se realiza a través de la sintaxis de punto.
 """
 
 
@@ -18,9 +18,9 @@ La estructura llamada Constructor permite inicializar la clase, en esta estructu
 """
 Estructura de una Clase
 nombre es importante notar que el nombre es con mayúscula
-En este ejemplo la clase tiene un solo atributo llamado x el cual acederemos por medio del punto . una vez creado el objeto obj. Por medio del Csontructor definimos ese valor cada vez que inicializamos una variable de tipo Clase.
+En este ejemplo la clase tiene un solo atributo llamado x el cual accederemos por medio del punto . una vez creado el objeto obj. Por medio del Constructor definimos ese valor cada vez que inicializamos una variable de tipo Clase.
 El primer parámetro de cada función dentro de una clase debe ser este "self", su nombre es por convención.
-También por convención las clases se escriben en un arcivo independiente.
+También por convención las clases se escriben en un archivo independiente.
 """
 # clase MiClase
 class MiClase:
@@ -33,7 +33,7 @@ print(obj.valor)
 
 """
 Se pueden modificar los atributos de un objeto sobre escribiendo.
-También se pueden borrar atribujos y objetos completos por medio de la palabra del
+También se pueden borrar atributos y objetos completos por medio de la palabra del
 """
 obj.valor = 10
 print(obj.valor)
