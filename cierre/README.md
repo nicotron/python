@@ -4,11 +4,13 @@
 
 #### Ranking de los alumnos con mejor promedio general, por ramo y peor asistencia.
 
-Dadas tres listas:
+Dadas las listas:
 
 - Apellido Nombre, ID
-- ID, curso, notas
-- ID, curso, asistencia
+- ID, cursoA, notas
+- ID, cursoB, notas
+- ID, cursoA, asistencia
+- ID, cursoB, asistencia
 
 Se deberá entregar una lista con todos los resultados en siguiente orden:
 
