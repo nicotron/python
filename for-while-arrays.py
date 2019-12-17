@@ -118,7 +118,7 @@ Son una estructura para poder almacenar información ordenada, esto permite pode
 Son variables que almacenan multiples valores en sí misma.
 Se crean con corchetes después del nombre de la variable, y en su interior se pueden almacenar las variables.
 Son de tamaño dinámico por lo que para agregar o disminuir, existen los métodos:
-apped() para agregar
+append() para agregar
 pop() para eliminar por índicie
 remove() para eliminar por nombre del elemento dentro de la lista
 """
