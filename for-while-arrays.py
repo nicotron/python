@@ -135,6 +135,15 @@ colores.append("amarillo")
 for color in colores:
     print(color)
 print("-----")
+
+# modificar valor de un elemento
+colores[1] = "rosa"
+print(colores[1])
+# iterar por todos los elementos de la lista
+for color in colores:
+    print(color)
+print("-----")
+
 # remover el ultimo elemento, necesitamos saber el tamaño para luego saber la ultima posicion
 ultimo = len(colores)
 colores.pop(ultimo-1)
