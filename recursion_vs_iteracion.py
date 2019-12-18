@@ -14,13 +14,17 @@ Si esto no ocurre, es imposible salir de la función.
 
 def recursion(numero):
     # caso base, si llega al 1 devuelve 1
-    if(numero <= 1):
+    if(numero == 1):
+        print("caso base alcanzado")
         return 1
         # llamado a la función dentro de sí misma
     else:
+        suma = 0
+        # valores antes de recursión
+        print("suma:"+str(suma) + " numero:"+str(numero))
         suma = numero + recursion(numero-1)
-        # imprimir el valor es para depuración y ejemplo
-        print(suma)
+        # valores durante la recursión
+        print("suma:"+str(suma) + " numero:"+str(numero) + " + recursion:" + str(numero-1))
     return suma
 
 # utilizando la recursión, si entregamos el valor 6, el primer valor que entrega es 1, luego 3 (1+2), luego 6 (3+(1+2)), ...
@@ -34,11 +38,12 @@ A diferencia las funciones iterativas son de mejor entendimiento ya que iterar d
 """
 
 """
-Para crear funciones que iteren es necesario declarar un for loop dentro de la función
+Para crear funciones que iteren es necesario declarar un for loop dentro de la función.
+La diferencia es que el número ingresado deber ser visto como una secuencia, como lo vimos en la estructura de for loops en Python, por lo que es necesario convertir ese valor en un rango de valores con la palabra range, el número más 1, ya que range entrega desde 0 hasta menor que el parámetro ingresado
 """
 
 # funcion iterativa
-# recibe un numero y suma sus valores desde 0 hasta el numero ingresadp
+# recibe un numero y suma sus valores desde 0 hasta el numero ingresado
 
 
 def iterativa(numero):
