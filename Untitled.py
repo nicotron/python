@@ -75,3 +75,44 @@ colores.remove("cafe")
 for color in colores:
     print(color)
 print("------------")
+
+
+# ------------------------------------------------------------------------------
+# Semana 9 Encapsulamiento, modularidad, economía
+# Funciones y parámetros
+
+
+def nombre_edad(edad=0, nombre="sin nombre"):
+    print("Mi nombre es " + nombre + " y tengo " + str(edad) + " años.")
+
+
+nombre_edad("Nicolas", 25)
+nombre_edad("Elena", 2)
+nombre_edad("Maria", 19)
+
+# ------------------------------------------------------------------------------
+# funcion que devuelve el doble de su valor
+
+
+def el_doble(numero):
+    return 2*numero
+
+
+d2 = el_doble(2)
+d10 = el_doble(10)
+print(d2)
+print(d10)
+
+# Semana 10 Programación modular
+
+
+def saludo(nombre):
+    print("Hola mi nombre es " + nombre)
+
+
+def nombre_edad(edad=0, nombre="sin nombre"):
+    print("Mi nombre es " + nombre + " y tengo " + str(edad) + " años.")
+
+import creacion_textos
+
+creacion_textos.saludo("nicolas")
