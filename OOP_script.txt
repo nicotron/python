@@ -1,0 +1,155 @@
+Programación Orientada a Objetos es un concepto utilizado ampliamente para escribir programas poderosos y de complejidad mayor cuando los conceptos anteriores no logran responder bien al problema planteado. 
+
+	POO 
+	(P)rogramación
+	(O)rienteada a
+	(O)bjetos
+	Estructura más compleja, pero muy potente
+
+Hemos visto hasta ahora estructuras de eficiencia, y seguridad de escritura como las funciones, y la posibilidad de diversidad en ellas, a través de los parámetros. 
+
+	fuciones():
+		líneas de código de funciones
+		líneas de código de funciones
+		líneas de código de funciones
+
+También hemos visto estructuras de repetición secuencial como los while y for loops
+
+	while condicion==True:
+		líneas de codigo
+	
+	for i in Lista:
+		líneas de codigo
+
+Y otras estructuras de seguridad de ejecución como el manejo de errores
+
+	try:
+	except:
+	finally:
+
+En conjunto con las condicionales y los operadores modificando información en las variables, tenemos todo el contenido visto secuencialmente y así contruir nuestros programas ORIENTADOS A OBJETOS
+
+	variables
+	operadores
+	condicionales
+	manejo de errores
+	funciones
+
+	PROGRAMACION ORIENTADA A OBJETOS
+
+La programación orientada a objetos está basada en el paradigma de la programacación imperativa: en donde se usan declaraciones para cambiar el estado de un programa, que es lo he hemos estado haciendo al utilizar funciones que van transformando la información de las variables.
+
+	secuencia de líneas de codigo aparecen
+	secuencia de líneas de codigo aparecen
+	secuencia de líneas de codigo aparecen
+	secuencia de líneas de codigo aparecen
+
+La programación orientada a objetos usa los conceptos de "objeto" y "clase", en donde una clase se puede considerar una plantilla y un objeto es creado desde esa plantilla
+
+	objeto clase
+	clase: una plantilla 
+	objeto: una creación desde esa plantilla
+
+Los objetos tienen atributos: las características que posee; y métodos: las acciones que realiza
+
+	atributos: las características que posee
+	métodos: las acciones que realiza
+
+Por lo que por ejemplo es la clase Pizza.
+Como plantilla, debe definir qué significa ser una pizza. Que cosas tiene, ingredientes, cortes, tamaños. 
+Que cosas hace; como se prepara la masa, cuánto tiempo se hornea, etc.
+	
+	clase Pizza
+	atributos: ingredientes, cantidad de ellos, tipo de masa, tamaño de masa, etc
+	métodos: hacer la masa, moldear la masa, tiempo de cocción, tamaño de corte de ingredientes, cantidad de ingredientes, etc
+
+
+Una pizza en general tienen un nombre que las define por ejemplo la pizza mediterranea o la de piña, también se puede definir el tamaño, individual, mediana, familiar, extra gande, y el tipo de masa, tradicional, delgada o esas con borde de queso. 
+
+	pizza_mediterranea_familiar_delgada
+	
+Por lo que si crearamos este objeto al hacerlo estamos creando en la memoria un lugar que ese nombre y que puede acceder a todos los ingredientes y pasos para su preparación. 
+
+	pizza_mediterranea_familiar_delgada = 
+	atributos: ingredientes, cantidad de ellos, tipo de masa, tamaño de masa, etc
+	métodos: hacer la masa, moldear la masa, tiempo de cocción, tamaño de corte de ingredientes, cantidad de ingredientes, etc
+
+En la animación siguiente veremos paso a paso la creación de la clase Pizza y la creación de un objeto.
+
+----------------------------------------------------------
+
+animación Pizza.
+
+Veremos qué es la Programación Orientada a Objetos y cómo crear la clase y los objetos para construir diferentes Pizzas.
+
+	Programación Orientada a Objetos. (PPO)
+	Creación de clase y objetos.
+	Caso de estudio "Pizza"
+	Imagen de una pizza
+
+Un aspecto importante de la programación orientada a objetos es en la estructura de la clase, que se compone en atributos: las características que posee; y métodos: las acciones que realiza. La cantidad de cada uno de ellos define cuan compleja es la clase y por lo mismo, cuantos objetos de diferentes características pueden salir de ella. 
+
+	texto:
+	atributos: las características que posee
+	métodos: las acciones que realiza
+	Imagen de la pizza apuntando diferentes cosas de ella, el tamaño de la piza, la cantidad de ingredientes, el tipo de masa.
+
+El primer paso es definir los atributos que tiene la clase Pizza, agrupados bajo su nombre, los atributos serían: tipo de masa, tamaño masa, queso, salsa de tomate, tomate, oregano, ... podríamos añadir tantos atributos como detalles queremos en nuestra clase. 
+
+	clase Pizza:
+		tipo de masa
+		tamaño masa
+		queso
+		salsa de tomate
+		tomate
+		oregano 
+		harina
+		agua
+		sal
+		...
+
+El segundo es definir los métodos, estos tienen la misma estructura que las funciones con parámetros, y describen las acciones que se realizan con los atributos, por ejemplo: la pizza debe tener un tamaño por lo que dependiendo de la descripción de tamaño, el método que recibe ese atributo debe devolver el resultado acorde a lo declarado por lo que si nuestro parámetro de tamaño es individual, los ingredientes y procesos para hacer la masa de esa pizza, tiene una secuencia específica con los atributos específicos
+
+		luego del texto anterior, agregar
+		aparece este texto y una animación simple del proceso
+		#metodo para hacer la masa
+		base_masa(tamaño_masa):
+			si es individual:	
+				verter 100gramos de harina
+				verter 50ml agua tibia
+				mesclar con 1 cucharada de aceite
+				mesclar con 5gramos de levadura
+				agergar sal
+				amasar por 4 minutos
+
+
+Otro método que podemos hacer es cortar y agregar el tomate en relación al tamaño de la pizza, por lo que el valor del tamaño de la masa, modifica la candidad de tomates.
+		luego del texto anterior, agregar
+		aparece este texto y una animación simple del proceso
+		#metodo para el tomate
+		cortar_tomate(tamaño_masa):
+			si es individual:
+				2 tomates
+				cortar en mitades
+
+
+Y así podemos seguir con los métodos necesarios para por ejemplo, la pizza por mitades, las de borde de queso, la pizza con piña, etc
+
+		imagenes de esas caracteristicas hechas pizza
+
+Una vez tengamos todos los atributos y métodos de nuestra clase, podremos crear el primer objeto. si dijeramos "una pizza mediterranea, individual, con masa tradicional, o dijeramos una pizza de peperoni, familiar, con masa delgada." Ya sabemos cuales con sus ingredientes y procesos para obtener dos pizzas diferentes. 
+Esto se denomina objeto, el objeto llamado "mediterranea_individual_tradicional" es una individualización de la clase Pizza, la palabra clave es instancia. 
+Entonces cada objeto es una instancia de la clase Pizza, y la clase Pizza tiene todos los ingredientes y procesos para crear la pizza que queremos.
+
+		texto de 
+		"una pizza mediterranea, individual, con masa tradicional, o dijeramos una pizza de peperoni, familiar, con masa delgada."
+		más los dibujos de esas pizzas, agrupados en la palabra INSTANCIA, 
+
+		un diagrama que muestra un objeto fuera de la clase como un bloque 
+
+Este modelo mental de estructuración de los problemas en una Programación Orientada a Objetos es el paso final del curso y el más importante porque podremos ver todo desde ésta lógica, ¿cómo sería la clase auto?, o la clase perro?, cuales serian sus atributos y sus métodos? como podríamos llevar un proceso académico con asignaturas, alumnos, clases, salas de clases, etc
+
+	¿cómo sería la clase auto?, o la clase perro?, cuáles serían sus atributos y sus métodos?
+
+
+
